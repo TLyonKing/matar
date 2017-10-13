@@ -63,7 +63,7 @@ class MatrixHelper {
         let distance = 5.0
         let bearing = originLocation.bearingToLocationRadian(location)
         print("Bearing: ", bearing)
-        let translationMatrix = GLKMatrix4Translate(GLKMatrix4Identity, 0.0, -50.0, Float(-distance))
+        let translationMatrix = GLKMatrix4Translate(GLKMatrix4Identity, 0.0, -5.0, Float(-distance))
         let rotationMatrix = GLKMatrix4RotateY(GLKMatrix4Identity, Float(-bearing))
         let translationMatrix1 = convertGLKMatrix4Tosimd_float4x4(translationMatrix)
         let rotationMatrix1 = convertGLKMatrix4Tosimd_float4x4(rotationMatrix)
